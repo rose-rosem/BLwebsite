@@ -1,43 +1,143 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>@ViewBag.Title - 培洛科技官网</title>
+    @Styles.Render("~/Layout/css")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <a href="#" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+    <!--Loader-->
+    <div class="loader">
+        <div class="bouncybox">
+            <div class="bouncy"></div>
+        </div>
+    </div>
+
+    <div class="topbar">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                    <li>@Html.ActionLink("关于", "About", "Home")</li>
-                    <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
-                </ul>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <span class="info"><a href="#."> Have any question?</a></span>
+                        <span class="info"><i class="icon-phone2"></i>(654) 332-112-222</span>
+                        <span class="info"><i class="icon-mail"></i>support@edua.com</span>
+                    </div>
+                    <ul class="social_top pull-right">
+                        <li><a href="#."><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#."><i class="icon-twitter4"></i></a></li>
+                        <li><a href="#."><i class="icon-google"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo-white.png" alt="logo" class="logo logo-display">
+                        <img src="images/logo.png" class="logo logo-scrolled" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOut">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">courses</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="courses.html">Courses</a></li>
+                                <li><a href="course_detail.html">Courses Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">events</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="event.html">events</a></li>
+                                <li><a href="event_detail.html">Events Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="shop.html">shop</a></li>
+                                <li><a href="shop_detail.html">shop detail</a></li>
+                                <li><a href="shop_cart.html">shop cart</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    @RenderBody()
+
+    <!--FOOTER-->
+    <footer class="padding-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 footer_panel bottom25">
+                    <h3 class="heading bottom25">About Us<span class="divider-left"></span></h3>
+                    <a href="index.html" class="footer_logo bottom25"><img src="images/logo-white.png" alt="Edua"></a>
+                    <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                    <ul class="social_icon top25">
+                        <li><a href="#." class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#." class="twitter"><i class="icon-twitter4"></i></a></li>
+                        <li><a href="#." class="dribble"><i class="icon-dribbble5"></i></a></li>
+                        <li><a href="#." class="instagram"><i class="icon-instagram"></i></a></li>
+                        <li><a href="#." class="vimo"><i class="icon-vimeo4"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 footer_panel bottom25">
+                    <h3 class="heading bottom25">Quick Links<span class="divider-left"></span></h3>
+                    <ul class="links">
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Home</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Company</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Services</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Our Team</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Company History</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Certifications</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Blog</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Shop</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Privacy Policy</a></li>
+                        <li><a href="#."><i class="icon-chevron-small-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-4 footer_panel bottom25">
+                    <h3 class="heading bottom25">Keep in Touch <span class="divider-left"></span></h3>
+                    <p class=" address"><i class="icon-map-pin"></i>198 West 21th Street Victoria 8007, Australia</p>
+                    <p class=" address"><i class="icon-phone"></i>(654) 332-112-222</p>
+                    <p class=" address"><i class="icon-mail"></i><a href="mailto:Edua@info.com">Edua@info.com</a></p>
+                    <img src="images/footer-map.png" alt="we are here" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER ends-->
+
+    @Scripts.Render("~/Layout/js")
+
+    @*@RenderSection("scripts", required: false)*@
+
 </body>
 </html>

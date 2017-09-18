@@ -23,9 +23,39 @@ namespace BLwebsite
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Layout/css").Include(
+                      "~/Content/bootstrap.min.css",
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/edua-icons.css",
+                      "~/Content/animate.min.css",
+                      "~/Content/owl.carousel.css",
+                      "~/Content/owl.transitions.css",
+                      "~/Content/cubeportfolio.min.css",
+                      "~/Content/settings.css",
+                      "~/Content/bootsnav.css",
+                      "~/Content/style.css",
+                      "~/Content/loader.css"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/Layout/js").Include(
+                      "~/Scripts/jquery-2.2.3.js",
+                      "~/Scripts/bootstrap.min.js",
+                      "~/Scripts/bootsnav.js",
+                      "~/Scripts/jquery.appear.js",
+                      "~/Scripts/jquery-countTo.js",
+                      "~/Scripts/jquery.parallax-1.1.3.js",
+                      "~/Scripts/owl.carousel.min.js",
+                      "~/Scripts/jquery.cubeportfolio.min.js",
+                      "~/Scripts/jquery.themepunch.tools.min.js",
+                      "~/Scripts/jquery.themepunch.revolution.min.js",
+                      "~/Scripts/revolution.extension.layeranimation.min.js",
+                      "~/Scripts/revolution.extension.navigation.min.js",
+                      "~/Scripts/revolution.extension.parallax.min.js",
+                      "~/Scripts/revolution.extension.slideanims.min.js",
+                      "~/Scripts/revolution.extension.video.min.js",
+                      "~/Scripts/revolution.extension.video.min.js",
+                      "~/Scripts/wow.min.js",
+                      "~/Scripts/functions.js"));
         }
     }
 }
