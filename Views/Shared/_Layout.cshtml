@@ -21,9 +21,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="pull-left">
-                        <span class="info"><a href="#."> Have any question?</a></span>
-                        <span class="info"><i class="icon-phone2"></i>(654) 332-112-222</span>
-                        <span class="info"><i class="icon-mail"></i>support@edua.com</span>
+                        <span class="info"><a href="http://wpa.qq.com/msgrd?v=3&uin=825021872&site=qq&menu=yes">在线提问?</a></span>
+                        <span class="info"><i class="icon-phone2"></i>400-878-4867</span>
+                        <span class="info"><i class="icon-mail"></i>baconlocke@163.com</span>
                     </div>
                     <ul class="social_top pull-right">
                         <li><a href="#."><i class="fa fa-facebook"></i></a></li>
@@ -43,38 +43,32 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logo-white.png" alt="logo" class="logo logo-display">
-                        <img src="images/logo.png" class="logo logo-scrolled" alt="">
+                    <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                        <img src="~/images/logo-white.png" alt="logo" class="logo logo-display">
+                        <img src="~/images/logo-black.png" class="logo logo-scrolled" alt="">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOut">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="@Url.Action("Index","Home")">首页</a></li>
+                        <li><a href="@Url.Action("Advantage","Home")">培洛优势</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">courses</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">培洛课程</a>
                             <ul class="dropdown-menu">
-                                <li><a href="courses.html">Courses</a></li>
-                                <li><a href="course_detail.html">Courses Detail</a></li>
+                                <li><a href="@Url.Action("Advanced","Courses")">培洛专项</a></li>
+                                <li><a href="@Url.Action("Phonetic", "Courses")">培洛音标</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown"><a href="@Url.Action("StudentCase","Home")">学员案例</a></li>
+                        <li><a href="@Url.Action("Download","Home")">使用下载</a></li>
+                        <li><a href="@Url.Action("HelpCenter","Home")">帮助中心</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">events</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于我们</a>
                             <ul class="dropdown-menu">
-                                <li><a href="event.html">events</a></li>
-                                <li><a href="event_detail.html">Events Detail</a></li>
+                                <li><a href="@Url.Action("Contact","AboutUS")">联系我们</a></li>
+                                <li><a href="@Url.Action("Methodology", "AboutUS")">培洛方法论</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="shop.html">shop</a></li>
-                                <li><a href="shop_detail.html">shop detail</a></li>
-                                <li><a href="shop_cart.html">shop cart</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -88,38 +82,38 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 footer_panel bottom25">
-                    <h3 class="heading bottom25">About Us<span class="divider-left"></span></h3>
-                    <a href="index.html" class="footer_logo bottom25"><img src="images/logo-white.png" alt="Edua"></a>
+                    <h3 class="heading bottom25">关于我们<span class="divider-left"></span></h3>
+                    <a href="@Url.Action("Index","Home")" class="footer_logo bottom25"><img src="~/images/logo-white.png" alt="Edua"></a>
                     <p>We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
                     <ul class="social_icon top25">
-                        <li><a href="#." class="facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#." class="twitter"><i class="icon-twitter4"></i></a></li>
-                        <li><a href="#." class="dribble"><i class="icon-dribbble5"></i></a></li>
-                        <li><a href="#." class="instagram"><i class="icon-instagram"></i></a></li>
-                        <li><a href="#." class="vimo"><i class="icon-vimeo4"></i></a></li>
+                        <li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="" class="twitter"><i class="icon-twitter4"></i></a></li>
+                        <li><a href="" class="dribble"><i class="icon-dribbble5"></i></a></li>
+                        <li><a href="" class="instagram"><i class="icon-instagram"></i></a></li>
+                        <li><a href="" class="vimo"><i class="icon-vimeo4"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-4 footer_panel bottom25">
-                    <h3 class="heading bottom25">Quick Links<span class="divider-left"></span></h3>
+                    <h3 class="heading bottom25">快速访问<span class="divider-left"></span></h3>
                     <ul class="links">
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Home</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Company</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Services</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Our Team</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Company History</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Certifications</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Blog</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Shop</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Privacy Policy</a></li>
-                        <li><a href="#."><i class="icon-chevron-small-right"></i>Contact Us</a></li>
+                        <li><a href="@Url.Action("Index","Home")"><i class="icon-chevron-small-right"></i>首页</a></li>
+                        <li><a href="@Url.Action("Advantage","Home")"><i class="icon-chevron-small-right"></i>培洛优势</a></li>
+                        <li><a href="@Url.Action("Phonetic", "Courses")"><i class="icon-chevron-small-right"></i>培洛专项</a></li>
+                        <li><a href="@Url.Action("StudentCase","Home")"><i class="icon-chevron-small-right"></i>学员案例</a></li>
+                        <li><a href="@Url.Action("Download","Home")"><i class="icon-chevron-small-right"></i>使用下载</a></li>
+                        <li><a href="@Url.Action("HelpCenter","Home")"><i class="icon-chevron-small-right"></i>帮助中心</a></li>
+                        <li><a href="@Url.Action("Contact","AboutUS")"><i class="icon-chevron-small-right"></i>联系我们</a></li>
+                        <li><a href="@Url.Action("Methodology", "AboutUS")"><i class="icon-chevron-small-right"></i>培洛方法论</a></li>
+                        @*<li><a href=""><i class="icon-chevron-small-right"></i>Privacy Policy</a></li>
+                        <li><a href=""><i class="icon-chevron-small-right"></i>Contact Us</a></li>*@
                     </ul>
                 </div>
                 <div class="col-md-4 col-sm-4 footer_panel bottom25">
-                    <h3 class="heading bottom25">Keep in Touch <span class="divider-left"></span></h3>
-                    <p class=" address"><i class="icon-map-pin"></i>198 West 21th Street Victoria 8007, Australia</p>
-                    <p class=" address"><i class="icon-phone"></i>(654) 332-112-222</p>
-                    <p class=" address"><i class="icon-mail"></i><a href="mailto:Edua@info.com">Edua@info.com</a></p>
-                    <img src="images/footer-map.png" alt="we are here" class="img-responsive">
+                    <h3 class="heading bottom25">联系我们 <span class="divider-left"></span></h3>
+                    <p class=" address"><i class="icon-map-pin"></i>无锡市惠山区钱桥街道育才路27号</p>
+                    <p class=" address"><i class="icon-phone"></i>400-878-4867</p>
+                    <p class=" address"><i class="icon-mail"></i><a href="http://mail.163.com/">baconlocke@163.com</a></p>
+                    <img src="~/images/footer-map.png" alt="we are here" class="img-responsive">
                 </div>
             </div>
         </div>
@@ -128,7 +122,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+                    <p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
                 </div>
             </div>
         </div>

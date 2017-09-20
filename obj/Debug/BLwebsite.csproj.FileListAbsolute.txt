@@ -28,6 +28,6 @@ D:\plkjgit\BLwebsite\BLwebsite\bin\zh-Hans\System.Web.Razor.resources.dll
 D:\plkjgit\BLwebsite\BLwebsite\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\plkjgit\BLwebsite\BLwebsite\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\plkjgit\BLwebsite\BLwebsite\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-D:\plkjgit\BLwebsite\BLwebsite\obj\Debug\BLwebsite.csprojResolveAssemblyReference.cache
 D:\plkjgit\BLwebsite\BLwebsite\obj\Debug\BLwebsite.dll
 D:\plkjgit\BLwebsite\BLwebsite\obj\Debug\BLwebsite.pdb
+D:\plkjgit\BLwebsite\BLwebsite\obj\Debug\BLwebsite.csprojResolveAssemblyReference.cache
